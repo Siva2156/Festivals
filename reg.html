@@ -1,0 +1,101 @@
+<!Doctype>
+<html>
+  <head>
+    <title> Register </title>
+    <style>
+    html{
+      background-image:url('https://thumbs.dreamstime.com/b/tiered-birthday-cake-sprinkles-three-tiers-colorful-146921898.jpg');
+      backgroud-repeat:no-repeat;
+      background-size:cover;
+      height:100%;
+      font-size:1.4em;
+ }
+     h1 {
+      color:indigo;
+     }
+    .form {
+       text-align:center;
+      margin-top: 10vh;
+      padding: 20px;
+       margin-bottom:20px;    
+      }
+     .group
+    {
+     border-radius:3px;
+     margin-top:20px; 
+     margin-bottom:20px;    
+  }
+    .group input:focus {
+     outline:0;  
+  }
+    .parent
+    {
+       display:grid;
+       grid-template-columns:auto 50% auto; 
+        margin-bottom:20px;    
+     }
+    #child1
+    {
+    
+    color:lightblue;
+    margin-top:25vh;
+    margin-bottom:25vh;
+    text-align:center;
+    rotate:-20deg;
+     }
+    #child2
+    {
+     border:1px solid #673147;
+     }
+     #name,#email,#number,#address
+    {
+     padding:7px;
+    border-radius:3px;
+      margin-top:2px; 
+     margin-bottom:20px;    
+    }
+    #submit
+    {
+      border-radius:3px;
+      padding:5px;
+      width:50%;
+      cursor:pointer;     
+       margin-bottom:20px;    
+}
+     </style>
+    <script src="reg.js"></script>
+  </head>
+  <body>
+<div class="parent">
+  <div id="child1"> <h2> <i>s.k.cakes.....</i><br><br><i>we are h<img width="30px" height="30px" src="data:image/png;base64,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">ppy to</i><br><br><i>invite you!!!!!!!!!!</i><br><br><i>welcome again</i><br><br> <i>Thank you!!!</i><br><br></h2>
+  </div>   
+  <div id="child2">
+  <form class="form">
+     <h1>Resistration Page</h1>
+      <div class="group">
+        <label>Username</label>
+        <input type="text"  id="name" name="name" placeholder="Enter your name" required> </input>
+     </div>
+      <div  class="group">
+        <label>Email</label>
+        <input type="email" id="email"vname="email" placeholder="Enter your email address" required> </input>
+      </div>
+      <div  class="group">
+        <label>Mobile Number</label>
+        <input type="number" id="number" name="number" placeholder="Enter your mobile number" required> </input>
+      </div>
+      <div  class="group">
+        <label>Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required> </input>
+      </div>
+      <div  class="group">
+      <button type="submit" id="submit" name="submit" onclick="func()"> Register </button>
+      </div>
+    </form> </div>
+
+ <div id="child3"> </div>
+ </div>
+</div>
+</body>
+</html>
+    
